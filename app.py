@@ -85,6 +85,20 @@ def api_stats():
         "total": len(cves)
     }
 
+
+
+@app.route("/cve/<cve_id>")
+def cve_detail(cve_id):
+
+    for cve in load_cves():
+        if cve["cve_id"] == cve_id:
+            return render_template(
+                "cve_detail.html",
+                cve=cve
+            )
+
+    return {"error": "Not Found"}, 404
+
 if __name__ == "__main__":
     app.run(debug=True)
 

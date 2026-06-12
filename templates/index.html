@@ -88,7 +88,7 @@
 
                 {% for cve in cves %}
                     <tr>
-                        <td>{{ cve.cve_id }}</td>
+                        <td><a href="/cve/{{ cve.cve_id }}">{{ cve.cve_id }}</a></td>
                         <td>{{ cve.status }}</td>
                     </tr>
                 {% endfor %}
