@@ -99,6 +99,17 @@ def cve_detail(cve_id):
 
     return {"error": "Not Found"}, 404
 
+
+
+from flask import send_file
+
+@app.route("/download/csv")
+def download_csv():
+    return send_file(
+        "exports/cve_export.csv",
+        as_attachment=True
+    )
+
 if __name__ == "__main__":
     app.run(debug=True)
 
