@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OpenSentinel</title>
+</head>
+<body>
+
+<h1>OpenSentinel Dashboard</h1>
+
+<p>Total CVEs: {{ cves|length }}</p>
+
+<table border="1">
+<tr>
+<th>CVE ID</th>
+<th>Status</th>
+</tr>
+
+{% for cve in cves %}
+<tr>
+<td>{{ cve.cve_id }}</td>
+<td>{{ cve.status }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
