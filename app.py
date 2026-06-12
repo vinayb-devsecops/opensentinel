@@ -1,14 +1,24 @@
 from flask import Flask, render_template, request
-import json
+import sqlite3
 
 app = Flask(__name__)
 
+DB_FILE = "database/opensentinel.db"
+
 def load_cves():
-    try:
-        with open("reports/cve_report.json", "r") as f:
-            return json.load(f)
-    except:
-        return []
+
+    conn = sqlite3.connect(DB_FILE)
+    conn.row_factory = sqlite3.Row
+
+    rows = conn.execute("""
+        SELECT *
+        FROM cves
+        ORDER BY cve_id
+    """).fetchall()
+
+    conn.close()
+
+    return [dict(row) for row in rows]
 
 @app.route("/")
 def home():
