@@ -1,0 +1,11 @@
+cve_id,source,published,status
+CVE-1999-0095,cve@mitre.org,1988-10-01T04:00:00.000,Modified
+CVE-1999-0082,cve@mitre.org,1988-11-11T05:00:00.000,Modified
+CVE-1999-1471,cve@mitre.org,1989-01-01T05:00:00.000,Modified
+CVE-1999-1122,cve@mitre.org,1989-07-26T04:00:00.000,Modified
+CVE-1999-1467,cve@mitre.org,1989-10-26T04:00:00.000,Modified
+CVE-1999-1506,cve@mitre.org,1990-01-29T05:00:00.000,Modified
+CVE-1999-0084,cve@mitre.org,1990-05-01T04:00:00.000,Modified
+CVE-2000-0388,cve@mitre.org,1990-05-09T04:00:00.000,Modified
+CVE-1999-0209,cve@mitre.org,1990-08-14T04:00:00.000,Modified
+CVE-1999-1198,cve@mitre.org,1990-10-03T04:00:00.000,Modified
