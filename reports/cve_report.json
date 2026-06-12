@@ -2,51 +2,61 @@
   {
     "cve_id": "CVE-1999-0095",
     "source": "cve@mitre.org",
-    "published": "1988-10-01T04:00:00.000"
+    "published": "1988-10-01T04:00:00.000",
+    "status": "Modified"
   },
   {
     "cve_id": "CVE-1999-0082",
     "source": "cve@mitre.org",
-    "published": "1988-11-11T05:00:00.000"
+    "published": "1988-11-11T05:00:00.000",
+    "status": "Modified"
   },
   {
     "cve_id": "CVE-1999-1471",
     "source": "cve@mitre.org",
-    "published": "1989-01-01T05:00:00.000"
+    "published": "1989-01-01T05:00:00.000",
+    "status": "Modified"
   },
   {
     "cve_id": "CVE-1999-1122",
     "source": "cve@mitre.org",
-    "published": "1989-07-26T04:00:00.000"
+    "published": "1989-07-26T04:00:00.000",
+    "status": "Modified"
   },
   {
     "cve_id": "CVE-1999-1467",
     "source": "cve@mitre.org",
-    "published": "1989-10-26T04:00:00.000"
+    "published": "1989-10-26T04:00:00.000",
+    "status": "Modified"
   },
   {
     "cve_id": "CVE-1999-1506",
     "source": "cve@mitre.org",
-    "published": "1990-01-29T05:00:00.000"
+    "published": "1990-01-29T05:00:00.000",
+    "status": "Modified"
   },
   {
     "cve_id": "CVE-1999-0084",
     "source": "cve@mitre.org",
-    "published": "1990-05-01T04:00:00.000"
+    "published": "1990-05-01T04:00:00.000",
+    "status": "Modified"
   },
   {
     "cve_id": "CVE-2000-0388",
     "source": "cve@mitre.org",
-    "published": "1990-05-09T04:00:00.000"
+    "published": "1990-05-09T04:00:00.000",
+    "status": "Modified"
   },
   {
     "cve_id": "CVE-1999-0209",
     "source": "cve@mitre.org",
-    "published": "1990-08-14T04:00:00.000"
+    "published": "1990-08-14T04:00:00.000",
+    "status": "Modified"
   },
   {
     "cve_id": "CVE-1999-1198",
     "source": "cve@mitre.org",
-    "published": "1990-10-03T04:00:00.000"
+    "published": "1990-10-03T04:00:00.000",
+    "status": "Modified"
   }
 ]

@@ -19,7 +19,8 @@ for item in data["vulnerabilities"]:
     summary.append({
         "cve_id": cve["id"],
         "source": cve["sourceIdentifier"],
-        "published": cve["published"]
+        "published": cve["published"],
+        "status": cve["vulnStatus"]
     })
 
 with open("reports/cve_report.json", "w") as f:
