@@ -10,11 +10,15 @@ def get_summary():
         "select count(*) from cves"
     ).fetchone()[0]
 
+    status_counts = conn.execute("""
+        select status, count(*)
+        from cves
+        group by status
+    """).fetchall()
+
     conn.close()
 
     return {
-        "total_cves": total
+        "total_cves": total,
+        "status_counts": status_counts
     }
-
-if __name__ == "__main__":
-    print(get_summary())

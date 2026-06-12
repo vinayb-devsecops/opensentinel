@@ -87,3 +87,9 @@ def api_stats():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+from charts.stats import get_summary
+
+@app.route("/api/analytics")
+def api_analytics():
+    return get_summary()
