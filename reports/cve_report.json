@@ -1,32 +1,42 @@
 [
   {
-    "cve_id": "CVE-1999-0095"
+    "cve_id": "CVE-1999-0095",
+    "source": "cve@mitre.org"
   },
   {
-    "cve_id": "CVE-1999-0082"
+    "cve_id": "CVE-1999-0082",
+    "source": "cve@mitre.org"
   },
   {
-    "cve_id": "CVE-1999-1471"
+    "cve_id": "CVE-1999-1471",
+    "source": "cve@mitre.org"
   },
   {
-    "cve_id": "CVE-1999-1122"
+    "cve_id": "CVE-1999-1122",
+    "source": "cve@mitre.org"
   },
   {
-    "cve_id": "CVE-1999-1467"
+    "cve_id": "CVE-1999-1467",
+    "source": "cve@mitre.org"
   },
   {
-    "cve_id": "CVE-1999-1506"
+    "cve_id": "CVE-1999-1506",
+    "source": "cve@mitre.org"
   },
   {
-    "cve_id": "CVE-1999-0084"
+    "cve_id": "CVE-1999-0084",
+    "source": "cve@mitre.org"
   },
   {
-    "cve_id": "CVE-2000-0388"
+    "cve_id": "CVE-2000-0388",
+    "source": "cve@mitre.org"
   },
   {
-    "cve_id": "CVE-1999-0209"
+    "cve_id": "CVE-1999-0209",
+    "source": "cve@mitre.org"
   },
   {
-    "cve_id": "CVE-1999-1198"
+    "cve_id": "CVE-1999-1198",
+    "source": "cve@mitre.org"
   }
 ]
