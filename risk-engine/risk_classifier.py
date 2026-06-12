@@ -12,7 +12,7 @@ def classify(cvss_score):
     return "Low"
 
 
-print(classify(9.8))
-print(classify(7.5))
-print(classify(5.0))
-print(classify(2.0))
+test_scores = [9.8, 8.1, 6.5, 3.2]
+
+for score in test_scores:
+    print(f"CVSS: {score} -> {classify(score)}")
