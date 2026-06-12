@@ -10,33 +10,33 @@ Autonomous Vulnerability Intelligence Platform built with Python and Flask.
 - Security Advisory Templates
 - REST API
 - Web Dashboard
-- Severity Tracking
+- CVE Search
 
 ## Technology Stack
 
 - Python
 - Flask
-- JSON
 - Bootstrap 5
+- JSON
 
-## API
+## API Endpoints
 
-GET /api/cves
+- /api/cves
+- /api/cves/<cve_id>
+- /api/stats
 
-## Run Locally
+## Architecture
 
-pip install -r requirements.txt
-python app.py
+Collector -> Processing -> Risk Engine -> API -> Dashboard
 
-Open:
-http://127.0.0.1:5000
+## Screenshots
 
-## Project Structure
+To be added
 
-collectors/
-dashboard/
-risk-engine/
-reports/
-advisories/
-templates/
+## Future Roadmap
+
+- CVSS Analytics
+- Database Backend
+- User Authentication
+- PDF Reporting
 
