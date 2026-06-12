@@ -12,7 +12,19 @@ def classify(cvss_score):
     return "Low"
 
 
-test_scores = [9.8, 8.1, 6.5, 3.2]
+def severity_counts(scores):
 
-for score in test_scores:
-    print(f"CVSS: {score} -> {classify(score)}")
+    result = {
+        "Critical": 0,
+        "High": 0,
+        "Medium": 0,
+        "Low": 0
+    }
+
+    for score in scores:
+        result[classify(score)] += 1
+
+    return result
+
+
+print(severity_counts([9.8, 9.1, 8.0, 7.5, 5.2, 3.1]))
