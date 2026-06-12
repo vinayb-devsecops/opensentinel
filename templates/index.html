@@ -7,7 +7,18 @@
 
 <h1>OpenSentinel Dashboard</h1>
 
+<h3>Summary</h3>
+
 <p>Total CVEs: {{ cves|length }}</p>
+
+<ul>
+    <li>Critical: {{ stats.Critical }}</li>
+    <li>High: {{ stats.High }}</li>
+    <li>Medium: {{ stats.Medium }}</li>
+    <li>Low: {{ stats.Low }}</li>
+</ul>
+
+<h3>CVE List</h3>
 
 <table border="1">
 <tr>

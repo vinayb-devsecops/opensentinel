@@ -12,8 +12,21 @@ def load_cves():
 
 @app.route("/")
 def home():
+
     cves = load_cves()
-    return render_template("index.html", cves=cves)
+
+    stats = {
+        "Critical": 0,
+        "High": 0,
+        "Medium": 0,
+        "Low": 0
+    }
+
+    return render_template(
+        "index.html",
+        cves=cves,
+        stats=stats
+    )
 
 @app.route("/api/cves")
 def api_cves():
