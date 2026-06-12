@@ -16,12 +16,19 @@ summary = []
 for item in data["vulnerabilities"]:
     cve = item["cve"]
 
-    summary.append({
+    record = {
         "cve_id": cve["id"],
         "source": cve["sourceIdentifier"],
         "published": cve["published"],
         "status": cve["vulnStatus"]
-    })
+    }
+
+    metrics = cve.get("metrics", {})
+
+    if "cvssMetricV31" in metrics:
+        record["cvss_score"] = metrics["cvssMetricV31"][0]["cvssData"]["baseScore"]
+
+    summary.append(record)
 
 with open("reports/cve_report.json", "w") as f:
     json.dump(summary, f, indent=2)
