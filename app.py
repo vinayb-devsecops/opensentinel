@@ -142,6 +142,16 @@ def logout():
     session.clear()
     return redirect("/login")
 
+
+
+@app.route("/api/trends")
+def api_trends():
+
+    import json
+
+    with open("trends/cve_history.json","r") as f:
+        return json.load(f)
+
 if __name__ == "__main__":
     app.run(debug=True)
 
