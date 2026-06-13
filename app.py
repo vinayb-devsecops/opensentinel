@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request, redirect, session
+from flask import Flask, render_template, request, redirect, session, redirect, session
 import sqlite3
 
 app = Flask(__name__)
+app.secret_key = "opensentinel-dev-key"
 app.secret_key = "opensentinel-dev-key"
 
 DB_FILE = "database/opensentinel.db"
@@ -40,6 +41,9 @@ def login():
 
 @app.route("/")
 def home():
+
+    if "user" not in session:
+        return redirect("/login")
 
     if "user" not in session:
         return redirect("/login")
