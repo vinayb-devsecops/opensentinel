@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, session
 import sqlite3
 
 app = Flask(__name__)
+app.secret_key = "opensentinel-dev-key"
 
 DB_FILE = "database/opensentinel.db"
 
@@ -20,8 +21,28 @@ def load_cves():
 
     return [dict(row) for row in rows]
 
+
+
+@app.route("/login", methods=["GET","POST"])
+def login():
+
+    if request.method == "POST":
+
+        if (
+            request.form.get("username") == "admin"
+            and
+            request.form.get("password") == "opensentinel"
+        ):
+            session["user"] = "admin"
+            return redirect("/")
+
+    return render_template("login.html")
+
 @app.route("/")
 def home():
+
+    if "user" not in session:
+        return redirect("/login")
 
     cves = load_cves()
 
